@@ -1,0 +1,12 @@
+[Unit]
+Description=Epoll TCP/UDP server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/server 12345
+Restart=on-failure
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target

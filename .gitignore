@@ -1,0 +1,14 @@
+server
+tests
+stress
+build-deb/
+*.o
+*.out
+*.log
+*.deb
+
+.vscode/
+.idea/
+*.swp
+
+.DS_Store
